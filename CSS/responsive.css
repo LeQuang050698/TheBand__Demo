@@ -1,0 +1,42 @@
+@media (max-width: 739px) {
+    .navb__list,
+    .icon__search {
+        display: none;
+    }
+    .slider__content {
+        display: none;
+    }
+
+    .modal__container {
+        max-width: 500px;
+    }
+
+    .btn__send {
+        width: 100%;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .modal__container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .modal__container {
+        min-width: 900px;
+    }
+}
+
+@media (min-width: 740px) {
+    .navb__list {
+        display: flex;
+    }
+
+    .mobile__btn,
+    .icon__bars,
+    .navb__mobile {
+        display: none;
+    }
+
+}

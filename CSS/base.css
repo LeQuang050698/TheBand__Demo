@@ -1,0 +1,55 @@
+:root {
+    --text-color: #000;
+    --while-color: #fff;
+    --black-color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+.p-64-16 {
+    padding: 64px 16px !important;
+}
+
+.p-32-0 {
+    padding: 32px 0 !important;
+}
+
+.m-bt {
+    margin-bottom: 16px !important;
+}
+
+.m-15 {
+    margin: 15px 0 !important;
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--while-color);
+    background-color: var(--black-color);
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: var(--text-color);
+}
+
+

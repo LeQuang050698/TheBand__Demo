@@ -1,0 +1,426 @@
+.header {
+    width: 100%;
+    height: 46.5px;
+    background-color: var(--black-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.navb__list {
+    padding-left: 0;
+    margin: 0;
+}
+
+.navb__item a:hover {
+    background-color: #ccc;
+    color: var(--text-color);
+}
+
+.navb__item:last-child:hover .subNavb__list {
+    display: block;
+}
+
+.navb__item,
+.subNavb__item {
+    list-style: none;
+}
+
+.navb__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--while-color);
+    padding: 15.75px 24px;
+
+}
+
+.subNavb__list {
+    display: none;
+    position: absolute;
+    top: 46.5px;
+    min-width: 160px;
+    height: 115.5px;
+    background-color: var(--while-color);
+    margin: 0;
+    padding-left: 0;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.subNavb__item a {
+    width: 100%;
+    height: 38.5px;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 8px 16px;
+    text-transform: none;
+}
+
+.icon__search {
+    padding: 15.75px 24px;
+    color: var(--while-color);
+    font-size: 1.4rem;
+}
+
+.icon__search:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.mobile__btn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--while-color);
+    padding: 15.75px 24px;
+    text-transform: uppercase;
+}
+
+.mobile__btn:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+}
+
+.icon__bars {
+    padding: 15.75px 24px;
+    color: var(--while-color);
+    font-size: 1.4rem;
+}
+
+.icon__bars:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: var(--black-color);
+}
+
+.navb__mobile {
+    position: absolute;
+    top: 46.5px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2);
+}
+
+.navb__mobile--item {
+    list-style: none;
+}
+
+.navb__mobile--item a {
+    width: 100%;
+    min-height: 38.5px;
+    display: block;
+    text-decoration: none;
+    color: var(--while-color);
+    padding: 15.75px 24px;
+    text-transform: none;
+    text-transform: uppercase;
+}
+
+
+.slider {
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url('../IMG/la.jpg') top center / cover no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.slider__content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    color: var(--while-color);
+    text-align: center;
+    padding: 32px 16px;
+}
+.slider__title,
+.content__title {
+    font-size: 2.4rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.slider__subTitle,
+.content__subTitle {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container__content>h2 {
+    letter-spacing: 4px;
+}
+
+.content__subTitle>i {
+    opacity: 0.6    ;
+}
+
+.content__desc {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.member__name {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.member__img {
+    width: 66.66667%;
+    border-radius: 4px;
+    overflow: clip;
+    margin-left: 16.66667%;
+}
+
+.tourDates {
+    background-color: #000;
+}
+
+.tourDates .content__title,
+.tourDates .content__subTitle {
+    color: var(--while-color);
+}
+
+.tourDates__list {
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    background-color: var(--while-color);
+}
+
+.tuorDates__item {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tourDates__soldOut {
+    margin-left: 16px;
+    padding: 0 8px;
+    background-color: #f44336;
+    color: var(--while-color);
+    text-align: center;
+}
+
+.tourDates__quality {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    padding: 3px 8px;
+    margin-right: 16px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+.tourDates__item {
+    line-height: 1.5;
+}
+
+.tourDates__img {
+    width: 100%;
+    overflow: clip;
+    vertical-align: middle
+}
+
+.tourDates__content {
+    width: 100%;
+    background-color: var(--while-color);
+    padding: 0 16px;
+}
+
+.tourDates__times,
+.tourDates__desc {
+    font-size: 1.5rem;
+}
+
+.tourDates__site {
+    padding-top: 15px;
+    font-size: 1.5rem;
+}
+
+.tourDates__times {
+    opacity: 0.6;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.open {
+    display: flex;
+}
+
+.modal__container {
+    background-color: var(--while-color);
+    width: 900px;
+    position: relative;
+    margin: 0 10px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    animation: fadeIn 0.6s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.4rem;
+    padding: 8px 16px;
+    color: var(--while-color);
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    background-color: #ccc;
+    color: var(--text-color);
+}
+
+.modal__header {
+    width: 100%;
+    background-color: #009688;
+    color: var(--while-color);
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.modal__header  h2 {
+    margin: 10px 0;
+    font-size: 3rem;
+    font-family: 'Segoe UI',sans-serif;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.modal__body {
+    padding: 0 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.form-control {
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+.modal__body p {
+    font-size: 1.5rem;
+}
+
+.btn__pay {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.5rem;
+    background-color: #009688;
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn__close {
+    background-color: #f44336;
+    color: var(--while-color);
+    margin: 16px 0;
+}
+
+.modal__footer span {
+    font-size: 1.5rem;
+}
+
+.contact__desc--left {
+    font-size: 1.8rem;
+}
+
+.contact__desc--left p {
+    margin-bottom: 8px;
+}
+
+.contact__desc--left i {
+    width: 15px;
+}
+
+.contact__desc--left span {
+    margin-left: 16px;
+}
+
+.btn__send {
+    margin: 16px 0;
+    float: right;
+}
+
+.container__map {
+    width: 100%;
+}
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer__list i {
+    font-size: 2.2rem;
+    opacity: 0.6;
+    margin-right: 4px;  
+}
+
+.footer p {
+    font-size: 1.5rem;
+}
+
+.footer a {
+    color: var(--text-color);
+    opacity: 0.6;
+}
+

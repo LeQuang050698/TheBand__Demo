@@ -57,15 +57,16 @@ const main = {
 
     sliderChange: function() {
         setInterval(()=> {
-            this.currentIndex++
-            if(this.currentIndex >= (this.sliders.length + 1)) {
-                this.currentIndex = 0
-            }
-    
             $('.slider').style.backgroundImage = `url('${this.currentSlider.img}')`
             $('.slider__title').textContent = this.currentSlider.site
             $('.slider__subTitle').textContent = this.currentSlider.title
-        },4000)
+
+            this.currentIndex++
+
+            if(this.currentIndex >= this.sliders.length) {
+                this.currentIndex = 0
+            }
+        },2000)
     },
 
     start: function() {

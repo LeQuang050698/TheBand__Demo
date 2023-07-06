@@ -14,19 +14,19 @@ const main = {
         {
             site: 'New York',
             title: 'The atmosphere in New York is lorem ipsum.',
-            slider: './IMG/ny.jpg'
+            slider: '../IMG/ny.jpg'
         },
 
         {
             site: 'Chicago',
             title: 'Thank you, Chicago - A night we will not forget.',
-            slider: './IMG/chicago.jpg'
+            slider: '../IMG/chicago.jpg'
         },
 
         {
             site: 'Los Angeles',
             title: 'We had the best time playing at Venice Beach!',
-            slider: './IMG/la.jpg'
+            slider: '../IMG/la.jpg'
         },
     ],
 

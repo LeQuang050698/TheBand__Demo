@@ -58,7 +58,7 @@ const main = {
     sliderChange: function() {
         setInterval(()=> {
             this.currentIndex++
-            if(this.currentIndex >= this.sliders.length) {
+            if(this.currentIndex >= (this.sliders.length + 1)) {
                 this.currentIndex = 0
             }
     

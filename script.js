@@ -70,8 +70,8 @@ const main = {
 
     start: function() {
         this.defineProperties()
-        this.handleEvent()
         this.sliderChange()
+        this.handleEvent()
     }
 }
 

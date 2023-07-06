@@ -133,7 +133,10 @@
 .slider {
     margin-top: 46.5px;
     padding-top: 50%;
-    background: url('../IMG/la.jpg') top center / cover no-repeat;
+    background-image: url('../IMG/ny.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     top: 0;
     left: 0;

@@ -7,25 +7,26 @@ const navbMobile = $('.navb__mobile')
 const modal = $('.modal')
 const closeBtns = $$('.closeBtn')
 const btnBuyTickets = $$('.btn__buyTickets')
+
 const main = {
     currentIndex: 0,
     sliders: [
         {
             site: 'New York',
             title: 'The atmosphere in New York is lorem ipsum.',
-            img: '../IMG/ny.jpg'
+            slider: './IMG/ny.jpg'
         },
 
         {
             site: 'Chicago',
             title: 'Thank you, Chicago - A night we will not forget.',
-            img: '../IMG/chicago.jpg'
+            slider: './IMG/chicago.jpg'
         },
 
         {
             site: 'Los Angeles',
             title: 'We had the best time playing at Venice Beach!',
-            img: '../IMG/la.jpg'
+            slider: './IMG/la.jpg'
         },
     ],
 
@@ -55,24 +56,26 @@ const main = {
         })
     },
 
+    loadSlider: function() {
+        $('.slider').style.backgroundImage = `url('${this.currentSlider.slider}')`
+        $('.slider__title').textContent = this.currentSlider.site
+        $('.slider__subTitle').textContent = this.currentSlider.title
+    },
+
     sliderChange: function() {
         setInterval(()=> {
-            $('.slider').style.backgroundImage = `url('${this.currentSlider.img}')`
-            $('.slider__title').textContent = this.currentSlider.site
-            $('.slider__subTitle').textContent = this.currentSlider.title
-
             this.currentIndex++
-
             if(this.currentIndex >= this.sliders.length) {
                 this.currentIndex = 0
             }
+            this.loadSlider()
         },2000)
     },
 
     start: function() {
         this.defineProperties()
-        this.sliderChange()
         this.handleEvent()
+        this.sliderChange()
     }
 }
 
